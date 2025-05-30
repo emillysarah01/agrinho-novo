@@ -1,0 +1,119 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Indie Flower', cursive;
+  color: #ffffff;
+}
+
+/* Seções padrão */
+section {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Seção 1 - Capa */
+.capa {
+  position: relative;
+  background: linear-gradient(to bottom, #C08332, #DFAC8D);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagem central no fundo */
+.fundo-centralizado {
+  background-image: url(img/capa-profissionais-do-agro-do-futuro.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* Título da capa */
+.titulo-capa {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.titulo-capa h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 5rem;
+  color: #4f3030;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+/* Seção 2 - Imagem e Texto */
+.informacao {
+  display: flex;
+  background: linear-gradient(to right, #DFAC8D, #8C4D2E);
+}
+
+.imagem-info {
+  flex: 1;
+  background-image: url(img/campo\ para\ cidade\ .jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.texto-info {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-info h2 {
+  font-size: 2.5rem;
+  font-family: 'Luckiest Guy', cursive;
+  color: #ffd7c7;
+  margin-bottom: 20px;
+}
+
+.texto-info p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Seção 3 - Galeria */
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: linear-gradient(to top, #A2A183, #686230);
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.item-galeria {
+  width: 300px;
+  text-align: center;
+}
+
+.item-galeria img {
+  width: 100%;
+  border: 5px solid #686230;
+  border-radius: 10px;
+}
+
+.item-galeria p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #000;
+  font-family: 'Indie Flower', cursive;
+}
